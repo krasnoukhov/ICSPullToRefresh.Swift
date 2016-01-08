@@ -172,9 +172,7 @@ public class InfiniteScrollingView: UIView {
     }
     
     private func setScrollViewContentInset(contentInset: UIEdgeInsets) {
-        UIView.animateWithDuration(0.3, delay: 0, options: [.AllowUserInteraction, .BeginFromCurrentState], animations: { () -> Void in
-            self.scrollView?.contentInset = contentInset
-        }, completion: nil)
+        self.scrollView?.contentInset = contentInset
     }
     
     private func resetScrollViewContentInset() {

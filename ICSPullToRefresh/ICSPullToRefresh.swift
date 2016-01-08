@@ -180,9 +180,7 @@ public class PullToRefreshView: UIView {
     }
     
     private func setScrollViewContentInset(contentInset: UIEdgeInsets) {
-        animate {
-            self.scrollView?.contentInset = contentInset
-        }
+        self.scrollView?.contentInset = contentInset
     }
     
     private func resetScrollViewContentInset() {
